@@ -13,7 +13,7 @@ struct xkcd_NativeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ComicOverviewView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
