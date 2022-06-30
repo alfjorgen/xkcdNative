@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct xkcd_NativeApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             ComicOverviewView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

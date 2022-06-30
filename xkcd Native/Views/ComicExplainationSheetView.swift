@@ -13,15 +13,16 @@ struct ComicExplainationSheetView: View {
     @State var explanation: String
     
     var body: some View {
-        
-        WebView(text: $explanation)
-            .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: UIScreen.main.bounds.height )
+        VStack{
+            WebView(text: $explanation)
+                .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: UIScreen.main.bounds.height )
+                .padding()
+            
+            Button("Dismiss") {
+                dismiss()
+            }
             .padding()
-        
-        Button("Press to dismiss") {
-            dismiss()
         }
-        .padding()
     }
 }
 
@@ -38,10 +39,3 @@ struct WebView: UIViewRepresentable {
         
     }
 }
-
-/*struct ComicExplainationSheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        ComicExplainationSheetView()
-    }
-}
-*/

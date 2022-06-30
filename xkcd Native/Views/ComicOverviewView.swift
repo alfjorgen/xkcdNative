@@ -22,6 +22,8 @@ struct ComicOverviewView: View {
                             }
                         }
                 }
+                .navigationTitle("xkcd Native")
+                .padding()
                         
             }
             .task {
@@ -30,6 +32,7 @@ struct ComicOverviewView: View {
                 }
             }             
         }
+        
     }
     
 }
