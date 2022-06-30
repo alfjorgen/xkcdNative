@@ -17,13 +17,11 @@
 		A9D2379A2865112A00EA6DFB /* xkcd_NativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237992865112A00EA6DFB /* xkcd_NativeUITests.swift */; };
 		A9D2379C2865112A00EA6DFB /* xkcd_NativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2379B2865112A00EA6DFB /* xkcd_NativeUITestsLaunchTests.swift */; };
 		A9D237A9286515D000EA6DFB /* ComicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237A8286515D000EA6DFB /* ComicDetailView.swift */; };
-		A9D237AB2865164A00EA6DFB /* ComicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237AA2865164A00EA6DFB /* ComicViewModel.swift */; };
-		A9D237AF286516B500EA6DFB /* ComicExplanationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237AE286516B500EA6DFB /* ComicExplanationViewModel.swift */; };
 		A9D237B12868EA8C00EA6DFB /* ComicExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237B02868EA8C00EA6DFB /* ComicExplanationView.swift */; };
 		A9D237B42868EAD600EA6DFB /* XkcdComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237B32868EAD600EA6DFB /* XkcdComic.swift */; };
 		A9D237B62868ED6D00EA6DFB /* ComicOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237B52868ED6D00EA6DFB /* ComicOverviewView.swift */; };
-		A9D237B82868F37C00EA6DFB /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237B72868F37C00EA6DFB /* Comic.swift */; };
 		A9D237BB286A4DF500EA6DFB /* ComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237BA286A4DF500EA6DFB /* ComicService.swift */; };
+		A9D237C0286E231900EA6DFB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A9D237BF286E231900EA6DFB /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +55,9 @@
 		A9D237992865112A00EA6DFB /* xkcd_NativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcd_NativeUITests.swift; sourceTree = "<group>"; };
 		A9D2379B2865112A00EA6DFB /* xkcd_NativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcd_NativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9D237A8286515D000EA6DFB /* ComicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailView.swift; sourceTree = "<group>"; };
-		A9D237AA2865164A00EA6DFB /* ComicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModel.swift; sourceTree = "<group>"; };
-		A9D237AE286516B500EA6DFB /* ComicExplanationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicExplanationViewModel.swift; sourceTree = "<group>"; };
 		A9D237B02868EA8C00EA6DFB /* ComicExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicExplanationView.swift; sourceTree = "<group>"; };
 		A9D237B32868EAD600EA6DFB /* XkcdComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XkcdComic.swift; sourceTree = "<group>"; };
 		A9D237B52868ED6D00EA6DFB /* ComicOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicOverviewView.swift; sourceTree = "<group>"; };
-		A9D237B72868F37C00EA6DFB /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		A9D237BA286A4DF500EA6DFB /* ComicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D237C0286E231900EA6DFB /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +113,6 @@
 				A9D237B9286A1DDA00EA6DFB /* Networking */,
 				A9D237B22868EAB400EA6DFB /* Models */,
 				A9D237AD2865166500EA6DFB /* Views */,
-				A9D237AC2865165700EA6DFB /* ViewModels */,
 				A9D237792865112900EA6DFB /* xkcd_NativeApp.swift */,
 				A9D2377D2865112A00EA6DFB /* Assets.xcassets */,
 				A9D237822865112A00EA6DFB /* Persistence.swift */,
@@ -152,15 +147,6 @@
 			path = "xkcd NativeUITests";
 			sourceTree = "<group>";
 		};
-		A9D237AC2865165700EA6DFB /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				A9D237AA2865164A00EA6DFB /* ComicViewModel.swift */,
-				A9D237AE286516B500EA6DFB /* ComicExplanationViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		A9D237AD2865166500EA6DFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				A9D237B32868EAD600EA6DFB /* XkcdComic.swift */,
-				A9D237B72868F37C00EA6DFB /* Comic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +190,9 @@
 			dependencies = (
 			);
 			name = "xkcd Native";
+			packageProductDependencies = (
+				A9D237BF286E231900EA6DFB /* SwiftSoup */,
+			);
 			productName = "xkcd Native";
 			productReference = A9D237762865112900EA6DFB /* xkcd Native.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +265,9 @@
 				Base,
 			);
 			mainGroup = A9D2376D2865112900EA6DFB;
+			packageReferences = (
+				A9D237BE286E231900EA6DFB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = A9D237772865112900EA6DFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -321,16 +312,13 @@
 			files = (
 				A9D237862865112A00EA6DFB /* xkcd_Native.xcdatamodeld in Sources */,
 				A9D237BB286A4DF500EA6DFB /* ComicService.swift in Sources */,
-				A9D237AF286516B500EA6DFB /* ComicExplanationViewModel.swift in Sources */,
 				A9D237832865112A00EA6DFB /* Persistence.swift in Sources */,
 				A9D2377C2865112900EA6DFB /* ComicSaveView.swift in Sources */,
 				A9D2377A2865112900EA6DFB /* xkcd_NativeApp.swift in Sources */,
 				A9D237A9286515D000EA6DFB /* ComicDetailView.swift in Sources */,
 				A9D237B12868EA8C00EA6DFB /* ComicExplanationView.swift in Sources */,
-				A9D237B82868F37C00EA6DFB /* Comic.swift in Sources */,
 				A9D237B62868ED6D00EA6DFB /* ComicOverviewView.swift in Sources */,
 				A9D237B42868EAD600EA6DFB /* XkcdComic.swift in Sources */,
-				A9D237AB2865164A00EA6DFB /* ComicViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9D237BE286E231900EA6DFB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9D237BF286E231900EA6DFB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D237BE286E231900EA6DFB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A9D237842865112A00EA6DFB /* xkcd_Native.xcdatamodeld */ = {

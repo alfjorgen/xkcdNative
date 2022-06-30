@@ -22,6 +22,16 @@ struct XkcdComic: Codable {
     let day: String
     
     init() {
-        
+        month = ""
+        num = 0
+        link = ""
+        year = ""
+        news = ""
+        safe_title = ""
+        transcript = ""
+        alt = ""
+        img = ""
+        title = ""
+        day = ""
     }
 }
