@@ -95,13 +95,21 @@ extension ComicService {
             let doc: Document = try SwiftSoup.parse(html)
             let output: Element = try doc.getElementsByClass("mw-parser-output").first()!
             for node in output.children() {
+                let h2 = try node.getElementsByTag("h2")
+                let h2String = try h2.html()
+                let h2Doc: Document = try SwiftSoup.parse(h2String)
+                let h2Content = try h2Doc.text()
+                if h2Content == "Transcript[edit]" {
+                    break
+                }
+                
                 let pTag = try node.getElementsByTag("p")
                 let htmlString = try pTag.html()
                 let doc: Document = try SwiftSoup.parse(htmlString)
                 let content = try doc.text()
-                explanation += content
+                explanation += "<p>\(content)</p>"
             }
-        } catch Exception.Error(let _, let message) {
+        } catch Exception.Error(_, let message) {
             print(message)
         } catch {
             print("error")

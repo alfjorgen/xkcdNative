@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ComicDetailView: View {
     
+    @State private var showingSheet = false
     let comic: XkcdComic
     
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text(comic.title)
+                Text("\(String(comic.num)): \(comic.title)")
                     .font(.headline)
                 
                 AsyncImage(url: URL(string: comic.img),
@@ -39,12 +40,19 @@ struct ComicDetailView: View {
             }
         }
         .padding()
-        Button("Get explanation", action: getExplanation)
+        //Button("Get explanation", action: getExplanation)
+        Button("Get explaination") {
+            showingSheet.toggle()
+        }
+        .sheet(isPresented: $showingSheet) {
+            let expl = ComicService.explain(comic: comic.num)
+            ComicExplainationSheetView(explanation: expl)
+        }
     }
     
-    private func getExplanation() {
+    /*private func getExplanation() {
         let expl = ComicService.explain(comic: comic.num)
-    }
+    }*/
 }
 /*
 struct ComicDetailView_Previews: PreviewProvider {

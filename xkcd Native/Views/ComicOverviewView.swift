@@ -39,9 +39,9 @@ struct ComicListItemListView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(comic.title)
+            Text("\(String(comic.num)): \(comic.title)")
                 .font(.headline)
-            Text("\(comic.year)-\(comic.month)-\(comic.day)")
+            Text("Date: \(comic.year)-\(comic.month)-\(comic.day)")
                 .font(.subheadline)
         }
     }

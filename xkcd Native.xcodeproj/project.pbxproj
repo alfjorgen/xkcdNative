@@ -22,6 +22,7 @@
 		A9D237B62868ED6D00EA6DFB /* ComicOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237B52868ED6D00EA6DFB /* ComicOverviewView.swift */; };
 		A9D237BB286A4DF500EA6DFB /* ComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237BA286A4DF500EA6DFB /* ComicService.swift */; };
 		A9D237C0286E231900EA6DFB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A9D237BF286E231900EA6DFB /* SwiftSoup */; };
+		A9D237C2286E4A7400EA6DFB /* ComicExplainationSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D237C1286E4A7400EA6DFB /* ComicExplainationSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A9D237B32868EAD600EA6DFB /* XkcdComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XkcdComic.swift; sourceTree = "<group>"; };
 		A9D237B52868ED6D00EA6DFB /* ComicOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicOverviewView.swift; sourceTree = "<group>"; };
 		A9D237BA286A4DF500EA6DFB /* ComicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicService.swift; sourceTree = "<group>"; };
+		A9D237C1286E4A7400EA6DFB /* ComicExplainationSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicExplainationSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				A9D237A8286515D000EA6DFB /* ComicDetailView.swift */,
 				A9D237B02868EA8C00EA6DFB /* ComicExplanationView.swift */,
 				A9D237B52868ED6D00EA6DFB /* ComicOverviewView.swift */,
+				A9D237C1286E4A7400EA6DFB /* ComicExplainationSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				A9D237BB286A4DF500EA6DFB /* ComicService.swift in Sources */,
 				A9D237832865112A00EA6DFB /* Persistence.swift in Sources */,
 				A9D2377C2865112900EA6DFB /* ComicSaveView.swift in Sources */,
+				A9D237C2286E4A7400EA6DFB /* ComicExplainationSheetView.swift in Sources */,
 				A9D2377A2865112900EA6DFB /* xkcd_NativeApp.swift in Sources */,
 				A9D237A9286515D000EA6DFB /* ComicDetailView.swift in Sources */,
 				A9D237B12868EA8C00EA6DFB /* ComicExplanationView.swift in Sources */,
